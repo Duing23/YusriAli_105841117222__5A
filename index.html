@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naruto vs Sasuke Battle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Halaman Awal dengan Start Button -->
+    <div id="start-menu">
+      <h1>
+        PERTARUNGAN <br />
+        UZUMAKI NARUTO VS UCHIHA SASUKE
+      </h1>
+
+      <button id="start-btn">Mulai</button>
+      <p id="game-description">
+        <strong>Penjelasan:</strong><br />
+        - <strong>Rasengan</strong>: Serangan bola chakra yang besar dari
+        Naruto.<br />
+        - <strong>Amaterasu</strong>: Api hitam dari Sasuke yang membakar segala
+        sesuatu.<br />
+        - <strong>Rasengan Biju</strong>: Kombinasi Rasengan dengan chakra
+        Bijuu.<br />
+        - <strong>Chidori</strong>: Serangan petir tajam dari Sasuke.
+      </p>
+    </div>
+
+    <!-- Game Container (Hidden initially) -->
+    <div id="game-container" style="display: none">
+      <h1>PERTARUNGAN <br />UZUMAKI NARUTO VS UCHIHA SASUKE</h1>
+
+      <div id="character-container">
+        <div id="naruto">
+          <img src="karakter/naruto.png" alt="Naruto" id="naruto-image" />
+          <p id="naruto-health">Health: 500</p>
+        </div>
+        <div id="sasuke">
+          <img src="karakter/sasuke.png" alt="Sasuke" id="sasuke-image" />
+          <p id="sasuke-health">Health: 500</p>
+        </div>
+      </div>
+
+      <div id="attack-buttons">
+        <button id="rasengan-btn">Rasengan</button>
+        <button id="amaterasu-btn">Amaterasu</button>
+        <button id="rasengan-biju-btn">Rasengan Biju</button>
+        <button id="chidori-btn">Chidori</button>
+      </div>
+
+      <div id="damage-display"></div>
+    </div>
+
+    <!-- Audio for effects -->
+    <audio id="effect-sound" preload="auto"></audio>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+      <source src="musik/Musik.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+</html>
